@@ -1,4 +1,5 @@
 function login() {
+  const modal = document.querySelector('dialog')
   var nome = $("#nome").val();
   var senha = $("#senha").val();
 
@@ -13,6 +14,11 @@ function login() {
 
     window.location.href = "../Loja/loja.html";
   } else {
-    document.getElementById('dialog').showModal()
+    modal.showModal()
+    const button = document.querySelector("dialog button");
+    button.onclick = function () {
+      modal.close();
+    }
+      
   }
 }

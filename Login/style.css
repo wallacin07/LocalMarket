@@ -50,7 +50,11 @@ dialog
   justify-content: center;
   align-items: center;  */
   border: none;
+  text-align: center;
   border-radius: .5rem;
   box-shadow: 0 0 1em rgb(0 0 0 / .3);
-  width: 80%;
+  width: 30%;
+  position: fixed;
+  left: 37.5%;
+  top: 70%;
 }
