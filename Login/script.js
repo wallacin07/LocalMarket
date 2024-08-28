@@ -22,3 +22,16 @@ function login() {
       
   }
 }
+
+function showPassword()
+{
+  console.log("foi")
+  const senha = document.getElementById('senha');
+  if (senha.getAttribute('type') === 'password') {
+    senha.setAttribute('type', 'text');
+  }
+  else
+  {
+    senha.setAttribute('type', 'password');
+  };
+}
