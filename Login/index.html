@@ -12,11 +12,15 @@
     <div class="container">
       <h1>Login</h1>
       <input type="text" placeholder="Insira seu nome" id="nome" />
-      <div >
+      <div style="position: relative;">
         <input type="password" placeholder="Insira sua senha" id="senha" >
+        <button type="button" class="key"  onclick="showPassword()"><img src="../chaves.png" alt="" srcset="" id="chave"></button>
       </div>
       <button onclick="login()">Entrar</button>
       
+
+
+
           <dialog id="dialog">
             <h2>Sua senha ou usuario esta errada animal.</h2>
             <br>
@@ -25,9 +29,12 @@
             <br>
             <button>Fechar</button>
           </dialog>
+
+
+
       </div>
       <p><a href="../Showroom/showroom.html">Visitar showroom</a></p>
     </div>
-    <script src="script.js"></script>
+    <script src="script.js" type="text/javascript"></script>
   </body>
 </html>
