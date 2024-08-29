@@ -1,6 +1,6 @@
 $(document).ready(function () {
   // Recupera o carrinho do localStorage
-  const carrinho = JSON.parse(localStorage.getItem("market")) || [];
+  const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
 
   // Elemento onde a lista será exibida
   const listaElement = $("#lista");
@@ -10,6 +10,7 @@ $(document).ready(function () {
 
   // Função para exibir o carrinho
   function exibirCarrinho() {
+
     // Limpa o conteúdo atual da lista
     listaElement.empty();
 
@@ -22,7 +23,6 @@ $(document).ready(function () {
       const listItem = $("<li>").text(
         `${item.descricao} - Preço: $${item.preco.toFixed(2)}`
       );
-
       // Cria um botão de remoção
       const removeButton = $("<button>")
         .text("❌")
@@ -42,16 +42,16 @@ $(document).ready(function () {
     });
 
     // Exibe o total em preço no elemento totalElement
-    totalElement.text(`Total: $${totalPreco}`);
+    totalElement.text(`Total: $${totalPreco.toFixed(2)}`);
   }
 
   // Função para remover um item do carrinho
   function removerItemDoCarrinho(index) {
-    carrinho.splice(index, 1);
+    carrinho.splice(index,1);
     localStorage.setItem("carrinho", JSON.stringify(carrinho));
     exibirCarrinho();
   }
-
+  console.log("oi")
   // Chama a função para exibir o carrinho
   exibirCarrinho();
 });
@@ -77,10 +77,10 @@ function gerarDocumentoWord() {
       <body>
         <h1>Pedido confirmado</h1>
         <h3>Agradecemos sua preferencia</h3>
-        ${lista}
+        ${listaHtml}
         <br>
         <br>
-        ${total}
+        ${totalHtml}
       </body>
     </html>
   `;
@@ -92,4 +92,10 @@ function gerarDocumentoWord() {
   link.download = "carrinho.doc";
   link.click();
   document.getElementById("pedido").style.display = "block";
+}
+
+
+function fecharModal()
+{
+  document.getElementById("pedido").style.display = "none";
 }
