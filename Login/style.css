@@ -23,16 +23,6 @@ body {
   margin-bottom: 4vh;
 }
 
-.row
-{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid grey;
-  width: 35%;
-  height: 10%;
-}
 
 #chave
 {
@@ -47,6 +37,17 @@ body {
   background-color: white;
   width: 20%;
   height: 90%;
+}
+
+.row
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid grey;
+  width: 35%;
+  height: 10%;
 }
 
 .key {

@@ -25,6 +25,7 @@ function login() {
 
 function showPassword()
 {
+  console.log("foi")
   const senha = document.getElementById('senha');
   if (senha.getAttribute('type') === 'password') {
     senha.setAttribute('type', 'text');
@@ -33,5 +34,4 @@ function showPassword()
   {
     senha.setAttribute('type', 'password');
   };
-
 }
