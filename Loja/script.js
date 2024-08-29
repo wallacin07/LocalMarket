@@ -1,13 +1,13 @@
 // Declaração da variável produtos fora do escopo do evento para torná-la global
 let produtos;
 
-window.onload = function () {
-  var storedUser = localStorage.getItem("usuario");
-  var user = JSON.parse(storedUser);
-  document.getElementById("user").textContent = user.name;
-  document.getElementById("perfil").textContent = user.name;
-  document.getElementById("idPerfil").textContent = user.id;
-};
+// window.onload = function () {
+//   var storedUser = localStorage.getItem("usuario");
+//   var user = JSON.parse(storedUser);
+//   document.getElementById("user").textContent = user.name;
+//   document.getElementById("perfil").textContent = user.name;
+//   document.getElementById("idPerfil").textContent = user.id;
+// };
 
 document.addEventListener("DOMContentLoaded", function () {
   fetch("../Dados/loja.json")
@@ -66,6 +66,43 @@ document.addEventListener("DOMContentLoaded", function () {
       let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
       carrinho.push(produtoSelecionado);
       localStorage.setItem("carrinho", JSON.stringify(carrinho));
+      
+      alert("Voce adicionou um produto ao Carrinho");
+      // const alert = document.getElementById("alert");
+
+      // const modal = document.createElement("dialog");
+      // modal.className = "confirmBuy-modal";
+      // const modalHeader = document.createElement("div");
+      // modalHeader.className = "modal-header";
+      // const modalBody = document.createElement("div");
+      // modalBody.className = "modal-body";
+      // const modalFooter = document.createElement("div");
+      // modalFooter.className = "modal-footer";
+
+      // const h3 = document.createElement("h3");
+      // h3.textContent = "Alerta"
+      // const h5 = document.createElement("h5");
+      // h5.textContent = "Você adicionou esse item ao carrinho";
+      // const confirm = document.createElement("button");
+      // confirm.style.width = '100%';
+      // confirm.style.height = '10%';
+      // confirm.textContent = "Confirmar";
+
+      // modal.appendChild(modalHeader);
+      // modal.appendChild(modalBody);
+      // modal.appendChild(modalFooter);
+      // modalHeader.appendChild(h3);
+      // modalBody.appendChild(h5);
+      // modalFooter.appendChild(confirm);
+
+      // alert.appendChild(modal);
+
+      // modal.showModal()
+
+      // confirm.onclick = function () {
+      //     modal.close()
+      // }
+
     }
   );
 });
