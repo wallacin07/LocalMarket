@@ -31,9 +31,9 @@ $(document).ready(function () {
           removerItemDoCarrinho(index);
         });
 
+
       // Adiciona o botão à lista
       listItem.append(removeButton);
-
       // Adiciona o item à lista
       listaElement.append(listItem);
 
@@ -51,7 +51,6 @@ $(document).ready(function () {
     localStorage.setItem("carrinho", JSON.stringify(carrinho));
     exibirCarrinho();
   }
-  console.log("oi")
   // Chama a função para exibir o carrinho
   exibirCarrinho();
 });

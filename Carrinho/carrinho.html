@@ -4,20 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carrinho</title>
+    <link rel="shortcut icon" type="imagex/png" href="./shopping-cart_icon-icons.com_72552.svg">
     <link rel="stylesheet" href="./style.css">
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.0.1/mammoth.browser.min.js"></script>
   </head>
   <body>
-    <a href="../Loja/loja.html">Continuar comprando</a>
-    <h1>Carrinho</h1>
-    <div id="lista"></div>
-    <h3 id="total"></h3>
-    <button onclick="gerarDocumentoWord()">Realizar pedido</button>
-    <div id="pedido">
-      <p id="">Pedido gerado com sucesso</p>
-      <button id="close" onclick="fecharModal()">Fechar</button>
-    </div>
+
+    <header>
+      <nav class="nav between">
+        <h1 class="name-carrinho">Carrinho</h1>
+        <a href="../Loja/loja.html" class="d-flex center"><h3>Continuar comprando</h3></a>
+
+      </nav>
+
+
+    </header>
+
+    <main>
+      <section class="d-flex center h-100 column">
+        <h3>Produtos</h3>
+        <div id="lista" class="d-flex center column h-100">
+        </div>
+        <h3 id="total"></h3>
+        <button onclick="gerarDocumentoWord()">Realizar pedido</button>
+
+      </section>
+      <section>
+
+        <div id="pedido">
+          <p>Pedido gerado com sucesso</p>
+          <button id="close" onclick="fecharModal()">Fechar</button>
+        </div>
+
+      </section>
+
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
