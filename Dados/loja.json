@@ -2,19 +2,37 @@
   {
     "id": 1,
     "descricao": "Produto 1",
-    "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm3cExnsB3qat_a-YqS4zThCXsiR4TWk2f4_-Do7MXhw&s",
+    "imagem": "../Dados/2816.jpg",
     "preco": 10.0
   },
   {
     "id": 2,
     "descricao": "Produto 2",
-    "imagem": "https://storage.alboom.ninja/sites/7474/albuns/343827/fotografia-de-produtos-campinas-fotografo-publicidade-aloha-life-11.jpg?t=1541510096",
+    "imagem": "../Dados/creme.jpg",
     "preco": 20.0
   },
   {
     "id": 3,
     "descricao": "Produto 3",
-    "imagem": "https://skinquer.com.br/cdn/shop/articles/blogordem.jpg?v=1687270129",
-    "preco": 30.0
+    "imagem": "../Dados/Creminho.jpg",
+    "preco": 40.0
+  },
+  {
+    "id": 4,
+    "descricao": "Produto 3",
+    "imagem": "../Dados/NATBRA-23081_2.jpg",
+    "preco": 25.0
+  },
+  {
+    "id": 5,
+    "descricao": "Produto 3",
+    "imagem": "../Dados/NATBRA-88103_2.jpg",
+    "preco": 45.0
+  },
+  {
+    "id": 6,
+    "descricao": "Produto 3",
+    "imagem": "../Dados/NATBRA-2820_2.jpg",
+    "preco": 31.0
   }
 ]

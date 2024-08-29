@@ -1,26 +1,50 @@
-[
+  [
     {
       "id": 1,
       "descricao": "Produto 1",
-      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm3cExnsB3qat_a-YqS4zThCXsiR4TWk2f4_-Do7MXhw&s",
+      "imagem": "../Dados/2816.jpg",
       "preco": 10.0,
-      "quantidade": 15,
+      "quantidade": 18,
       "status": true
     },
     {
       "id": 2,
       "descricao": "Produto 2",
-      "imagem": "https://storage.alboom.ninja/sites/7474/albuns/343827/fotografia-de-produtos-campinas-fotografo-publicidade-aloha-life-11.jpg?t=1541510096",
-      "preco": 20.0,
-      "quantidade": 12,
-      "status": false
+      "imagem": "../Dados/creme.jpg",
+      "preco": 20.0,      
+      "quantidade": 15,
+      "status": true
     },
     {
       "id": 3,
       "descricao": "Produto 3",
-      "imagem": "https://static.ndmais.com.br/2023/10/umiificador.jpeg",
-      "preco": 30.0,
-      "quantidade": 18,
+      "imagem": "../Dados/Creminho.jpg",
+      "preco": 40.0,
+      "quantidade": 12,
+      "status": false
+    },
+    {
+      "id": 4,
+      "descricao": "Produto 3",
+      "imagem": "../Dados/NATBRA-23081_2.jpg",
+      "preco": 25.0,
+      "quantidade": 19,
+      "status": true
+    },
+    {
+      "id": 5,
+      "descricao": "Produto 3",
+      "imagem": "../Dados/NATBRA-88103_2.jpg",
+      "preco": 45.0,
+      "quantidade": 10,
+      "status": true
+    },
+    {
+      "id": 6,
+      "descricao": "Produto 3",
+      "imagem": "../Dados/NATBRA-2820_2.jpg",
+      "preco": 31.0,
+      "quantidade": 17,
       "status": true
     }
   ]
